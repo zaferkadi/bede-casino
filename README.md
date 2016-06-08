@@ -1,4 +1,4 @@
-# bede-casin
+#Bede-casino
 An implementaion of a betting system using ReactJS+Redux+es6+Scss+webpack
 
 ##Installation

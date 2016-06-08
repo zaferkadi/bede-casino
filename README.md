@@ -1,5 +1,6 @@
 #Bede-casino
 An implementaion of a betting system using ReactJS+Redux+es6+Scss+webpack
+![Bede](https://raw.githubusercontent.com/zaferkadi/bede-casino/master/ScreenShot.png)
 
 ##Setup
 npm install <br/>

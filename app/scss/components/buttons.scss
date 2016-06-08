@@ -1,0 +1,39 @@
+.btn {
+	cursor: pointer;
+	display: block;
+
+	&--primary {
+		padding: 1em;
+		width:100%;
+		background-color: $primary-btn-bg;
+		color: white;
+    	font-weight: bolder;
+    	font-size: 18pt;
+    	text-transform: uppercase;
+	}
+	&--changeFormat {
+		background-color: $primary-app-bg;
+		color: white;
+		width: 100%;
+		font-weight: bolder;
+	}
+	&--placeBet {
+		height: 100%;
+		background-color: #444D59;
+		color: white;
+		padding-left:1em;
+		padding-right:1em;
+		font-weight: bold;
+	}
+	&:disabled {
+    	background: #dddddd;
+	}
+	&:target {
+
+	}
+}
+
+.refresh-action {
+	text-align: right;
+}
+

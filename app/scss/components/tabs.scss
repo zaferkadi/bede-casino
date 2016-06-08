@@ -1,0 +1,16 @@
+.tabs {
+	& > li {
+		//float: left;
+		display: inline-block;
+		padding: 1em;
+		width: 33%;
+		background-color: $secondary-tabs-bg;
+		cursor: pointer;
+		//border-left: 1px solid #ccc;
+		color: $secondary-text-color;
+		&.active {
+			background-color:$primary-tabs-bg;
+			color: $primary-text-color;
+		}
+	}	
+}

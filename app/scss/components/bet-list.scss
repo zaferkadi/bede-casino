@@ -1,0 +1,66 @@
+.list {
+	li {
+		position: relative;
+		//margin: .2em 0;
+		margin-bottom: .2em;
+		background-color: $seconday-tabs-container-bg;
+	}
+	.item-container {
+		padding: 1em 1em;
+	}
+	&--bet {
+		.heading {
+			background-color: $primary-tabs-bg;
+		}
+		.meta {
+			float:right;
+			.add {
+
+			}
+			.odds {
+			    padding-right: .5em;
+			}
+		}
+	}
+	&--betslip {
+
+		.odds {
+	    	margin-right: .5em;
+			background-color: #456;
+			color: #fff;
+		}
+		.action { 
+			position: absolute;
+			top:0;
+			right:0;
+			height:100%;
+		}
+		.stake { 
+			padding-top: .5em;
+			label {
+				padding-left: 1em;
+			}
+		}
+		.total {
+			text-align: center;
+			padding-top: 1em;
+			background-color: $primary-tabs-bg;
+			position: absolute;
+    		bottom: 0;
+    		width: 100%;
+		}
+	}
+	&--receipt {
+		li {
+			.col {
+				//float: left;
+				display: inline-block;
+				width: 25%;
+				//height: 40px;
+			}
+			.heading {
+				font-weight: bold;;
+			}
+		}		
+	}
+}

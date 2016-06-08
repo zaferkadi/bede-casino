@@ -1,7 +1,7 @@
 #Bede-casino
 An implementaion of a betting system using ReactJS+Redux+es6+Scss+webpack
 
-##Installation
+##Setup
 npm install <br/>
 npm install --save webpack-dev-server // for hot reloading and server
 ##Run

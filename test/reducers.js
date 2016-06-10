@@ -14,9 +14,12 @@ describe('app reducer', () => {
   it('should return the initial state', () => {
     expect(
       app(undefined, {})
-    ).toEqual(
-      { decimalFormat: 'american', showMenu: false, nav: 'Bets', error:{}}
-    )
+    ).toEqual({
+      decimalFormat: 'american',
+      showMenu: false,
+      nav: 'Bets',
+      error: {}
+    });
   });
 });
 
@@ -25,35 +28,43 @@ describe('bet reducer', () => {
   it('should handle post request', () => {
     expect(
       bets([], {
-        type:types.REQUEST_POSTS,
-        isFetching:true
+        type: types.REQUEST_POSTS,
+        isFetching: true
       })
-    ).toEqual(
-      { isFetching:true}
-    )
+    ).toEqual({
+      isFetching: true
+    });
   });
 
   it('should handle post received', () => {
     expect(
       bets([], {
-        type:types.RECEIVE_POSTS,
-        isFetching:false,
-        items: [{bet_id:0}],
-        lastUpdated:123
+        type: types.RECEIVE_POSTS,
+        isFetching: false,
+        items: [{
+          bet_id: 0
+        }],
+        lastUpdated: 123
       })
-    ).toEqual({ 
-      isFetching:false,
-      items: [{bet_id:0}],
-      lastUpdated:123
-    })
+    ).toEqual({
+      isFetching: false,
+      items: [{
+        bet_id: 0
+      }],
+      lastUpdated: 123
+    });
   });
 });
 
 
-describe('slip reducer', ()=>{
-  it('should return the initial state',()=>{
+describe('slip reducer', () => {
+  it('should return the initial state', () => {
     expect(
-      slips(undefined,{})
-      ).toEqual({items:[], isPushing: false, receipts:[]});
+      slips(undefined, {})
+    ).toEqual({
+      items: [],
+      isPushing: false,
+      receipts: []
+    });
   });
 });

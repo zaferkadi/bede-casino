@@ -9,7 +9,9 @@
 @import './components/buttons.scss';
 @import './components/badge.scss';
 @import './components/settings.scss';
-
+html {
+    font-size:1em/1.5;
+}
 body {
 	//background-color: #098;
 	color :$primary-text-color;

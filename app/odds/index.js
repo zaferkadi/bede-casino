@@ -4,26 +4,33 @@ class odds {
     this.num = fraction.num;
     this.den = fraction.den;
   }
-  format(type){    
+
+  format(type) {
     type = type || 'fractional';
-    return this['format'+_capitalize(type)]();
+    return this['format' + _capitalize(type)]();
   }
+
   formatDecimal() {
-    return (this.num+this.den)/this.den;
+    return (this.num + this.den) / this.den;
   }
-  formatFractional(){
-    return this.num+'/'+this.den;
+
+  formatFractional() {
+    return this.num + '/' + this.den;
   }
-  formatAmerican(){
+
+  formatAmerican() {
     // over 1/1
     //(this.num/this.den)*100;
     // less 1/1
     //-100/(this.num/this.den)
-    return (this.num/this.den) >= 1 ? '+'+(this.num/this.den)*100 :  -100/(this.num/this.den);
+    return (this.num / this.den) >= 1 ? '+' + (this.num / this.den) * 100 :
+      -100 / (this.num / this.den);
   }
+
   calculateReturns(stake) {
-    return ((this.num/this.den)*stake)+stake;
+    return ((this.num / this.den) * stake) + stake;
   }
+
 }
 
 
